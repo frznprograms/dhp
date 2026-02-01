@@ -53,8 +53,7 @@ def click_no():
     st.session_state["no_message"] = messages.get(count, "Okay enough. Refreshing...")
 
     if count > 4:
-        st.session_state["no_clicked"] = 0
-        st.session_state["no_message"] = ""
+        st.session_state["no_message"] = messages.get(4)
 
 
 def page_question():
